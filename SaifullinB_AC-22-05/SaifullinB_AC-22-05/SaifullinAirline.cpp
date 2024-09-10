@@ -2,6 +2,9 @@
 #include <fstream>
 #include <iostream>
 
+SaifullinAirline::~SaifullinAirline() {
+    clearPlanes();
+}
 void SaifullinAirline::addPlane(SaifullinPlane* plane) {
     planes.push_back(plane);
 }

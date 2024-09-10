@@ -7,7 +7,7 @@ using namespace std;
 class SaifullinPlane {
 public:
     SaifullinPlane();
-    SaifullinPlane(const string& name, int capacity, int mass, int speed);
+    SaifullinPlane(const string& name, int capacity, int mass, int speed); 
 
     void readFromConsole();
     void writeToConsole() const;
@@ -17,6 +17,6 @@ public:
 private:
     string name;
     int capacity;
-    int mass;     
-    int speed;     
+    int mass;
+    int speed;
 };

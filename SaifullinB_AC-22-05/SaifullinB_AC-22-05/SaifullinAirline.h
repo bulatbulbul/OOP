@@ -4,6 +4,7 @@
 
 class SaifullinAirline {
 public:
+    ~SaifullinAirline();
     void addPlane(SaifullinPlane* plane);
     void displayPlanes() const;
     void readFromFile(const string& filename);

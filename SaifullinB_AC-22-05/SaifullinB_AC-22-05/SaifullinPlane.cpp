@@ -6,6 +6,7 @@ SaifullinPlane::SaifullinPlane() : name(""), capacity(0), mass(0), speed(0) {}
 SaifullinPlane::SaifullinPlane(const string& name, int capacity, int mass, int speed)
     : name(name), capacity(capacity), mass(mass), speed(speed) {}
 
+
 void SaifullinPlane::readFromConsole() {
     cout << "Введите имя самолета: ";
     cin >> name;
@@ -18,7 +19,9 @@ void SaifullinPlane::readFromConsole() {
 }
 
 void SaifullinPlane::writeToConsole() const {
-    cout << "Самолет: " << name << ", Вместимость: " << capacity << " пассажиров, Масса: " << mass << " тонн, Скорость: " << speed << " км/ч" << endl;
+    cout << "Самолет: " << name << ", Вместимость: " << capacity
+        << " пассажиров, Масса: " << mass << " тонн, Скорость: "
+        << speed << " км/ч" << endl;
 }
 
 void SaifullinPlane::readFromFile(ifstream& in) {
